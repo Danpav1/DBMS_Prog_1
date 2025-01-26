@@ -161,6 +161,7 @@ def handle_ui():
 
         response = input().strip()
 
+        # Match for adding or updating
         match response:
             case "1":
                 while True:
@@ -225,6 +226,8 @@ def handle_ui():
                         print("9: Exit")
 
                         entry_update_section_response = input("").strip() # Strip so that we get rid of trailing spaces
+                        
+                        # Match for changing parts of the entry
                         match entry_update_section_response:
                             case "1":
                                 # Change color logic
